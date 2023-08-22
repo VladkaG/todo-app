@@ -1,0 +1,17 @@
+.todo {
+  padding: 15px;
+  display: flex;
+}
+
+.todo span {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 22px;
+  padding-left: 10px;
+}
+
+.customChekbox {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+}
