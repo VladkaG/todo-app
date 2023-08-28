@@ -17,3 +17,13 @@ This project is my solution to the challenge from [DevChallenges.io](https://dev
 * React
 
 ## Screenshots
+
+![screenshot](https://github.com/VladkaG/todo-app/blob/cd72aa7d5c51f9cf3d7b8e2d725dfe3aa5a3bfd7/todo1.jpg)
+![screenshot](https://github.com/VladkaG/todo-app/blob/cd72aa7d5c51f9cf3d7b8e2d725dfe3aa5a3bfd7/todo2.jpg)
+
+## Live App
+
+[App Link](https://chic-khapse-8e18d8.netlify.app/)
+
+
+
