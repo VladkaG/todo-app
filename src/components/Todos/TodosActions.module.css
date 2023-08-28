@@ -1,0 +1,8 @@
+.buttonText {
+  padding-left: 5px;
+}
+
+.btn {
+  display: flex;
+  justify-content: flex-end;
+}

@@ -1,39 +1,22 @@
-import { useState } from 'react';
 import Todo from './Todo';
 import styles from './TodoList.module.css';
+import './TodoList.module.css';
 
-function TodoList({ todos }) {
-  const [checked, setChecked] = useState([]);
-
-  const handleCheck = (event) => {
-    let updatedList = [...checked];
-    if (event.target.checked) {
-      updatedList = [...checked, event.target.value];
-    } else {
-      updatedList.splice(checked.indexOf(event.target.value), 1);
-    }
-
-    setChecked(updatedList);
-
-    console.log(updatedList);
-  };
-
-  const isChecked = (todo) =>
-    checked.includes(todo)
-      ? styles['checked-item']
-      : styles['not-checked-item'];
-
+function TodoList({ todos, deleteTodo, toggleTodo, currentFilter }) {
   return (
-    <div className={styles.todoList}>
-      {todos.map((todo, index) => (
-        <Todo
-          key={index}
-          todo={todo}
-          handleCheck={handleCheck}
-          isChecked={isChecked}
-        />
-      ))}
-    </div>
+    <>
+      <div className={styles.todoList}>
+        {todos.map((todo) => (
+          <Todo
+            key={todo.id}
+            todo={todo}
+            deleteTodo={deleteTodo}
+            toggleTodo={toggleTodo}
+            currentFilter={currentFilter}
+          />
+        ))}
+      </div>
+    </>
   );
 }
 

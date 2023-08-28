@@ -10,7 +10,7 @@
   color: #000;
   font-size: 14px;
   border-radius: 12px;
-  border: 1px solid #BDBDBD;
+  border: 1px solid #bdbdbd;
   width: 80%;
   padding: 1rem;
 }
@@ -21,18 +21,10 @@
 }
 
 .todoFormContainer button {
-  margin-left: 15px;
-  color: #fff;
+  margin: 0 0 0 15px;
   font-size: 14px;
-  font-weight: 600;
-  border-radius: 12px;
-  background: #2F80ED;
+  background: #2f80ed;
   box-shadow: 0px 2px 6px 0px rgba(127, 177, 243, 0.4);
-  width: 20%;
-  padding: 1.07rem 1rem;
-  border: none;
-  cursor: pointer;
-  transition: all ease-in-out 200ms;
 }
 
 .todoFormContainer button:hover {

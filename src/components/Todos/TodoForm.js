@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Button from '../UI/Button';
 import styles from './TodoForm.module.css';
 
 function TodoForm({ addTodo }) {
@@ -19,7 +20,9 @@ function TodoForm({ addTodo }) {
           value={text}
           onChange={(event) => setText(event.target.value)}
         ></input>
-        <button type="submit">Add</button>
+        <Button className={styles.addButton} type="submit" title="Add">
+          Add
+        </Button>
       </form>
     </div>
   );

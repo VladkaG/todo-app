@@ -1,17 +1,43 @@
 .todo {
-  padding: 15px;
   display: flex;
+  align-items: center;
+  padding: 15px;
+  font-size: 22px;
 }
 
 .todo span {
-  font-size: 22px;
+  width: 100%;
   font-weight: 500;
   line-height: 22px;
   padding-left: 10px;
 }
 
-.customChekbox {
+.todoDelete {
+  cursor: pointer;
+  color: #bdbdbd;
+  font-size: 26px;
+  transition: transform 0.3s;
+}
+
+.todoDelete:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.todoChekbox {
   display: inline-block;
   width: 25px;
   height: 25px;
+  cursor: pointer;
+}
+
+.completedTodo {
+  text-decoration: line-through;
+  color: #555454;
+}
+
+@media (max-width: 425px) {
+  .todo {
+    font-size: 18px;
+  }
 }
